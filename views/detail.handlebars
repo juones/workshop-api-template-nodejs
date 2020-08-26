@@ -21,14 +21,14 @@
                     <hr class="p-0 m-0">
                     <br>
                     {{!--form --}}
-                    <form action="/processar_pagamento" method="post" id="pay" name="pay" >
+                    <form action="/server.js" method="post" id="pay" name="pay" >
     <fieldset>
         <p>
             <label for="description">Descrição</label>                        
             <input type="text" name="description" id="description" value="Ítem selecionado"/>
         </p>                    
         <p>
-            <label for="transaction_amount">Valor a pagar</label>                        
+            <label for="transaction_amount">Valor</label>                        
             <input name="transaction_amount" id="transaction_amount" value="100"/>
         </p>        
         <p>

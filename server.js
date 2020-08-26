@@ -29,10 +29,10 @@ var mercadopago = require('mercadopago');
 mercadopago.configurations.setAccessToken("TEST-5744316853073209-042221-b94a8e34a8b2eebcb55d450403627c82-228139103");
 
 var payment_data = {
-  transaction_amount: parseFloat(req.body.amount),
+  transaction_amount: parseFloat(req.body.transaction_amount),
   token: req.body.token,
-  description: req.body.title,
-  installments: parseInt(req.body.installmentsOption),
+  description: req.body.description,
+  installments: parseInt(req.body.installments),
   payment_method_id: req.body.paymentMethodId,
   payer: {
     email: req.body.email
